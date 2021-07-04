@@ -1,1 +1,1 @@
-# Dart LaTeX Parser (AsciiMath -> MathML -> LaTeX)
+# Dart LaTeX Parser (AsciiMath -> LaTeX)
