@@ -6,7 +6,7 @@ class Unary extends Symbol {
     String latex,
   ) : super(ascii, latex);
 
-  late Symbol symbol;
+  late dynamic symbol;
 
   Unary get copy => Unary(ascii, latex);
 }
