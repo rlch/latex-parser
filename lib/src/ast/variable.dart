@@ -7,4 +7,7 @@ class Variable implements Symbol {
 
   @override
   final String ascii, latex;
+
+  @override
+  String toString() => latex;
 }

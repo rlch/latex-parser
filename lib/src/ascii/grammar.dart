@@ -92,6 +92,6 @@ class AsciiDefinition extends GrammarDefinition {
 void test() {
   final parser = AsciiDefinition().build();
 
-  final res = parser.parse('x^23212.232 + xy_2');
-  print(res);
+  final res = parser.parse('x^23212.232+3');
+  print(res.value);
 }

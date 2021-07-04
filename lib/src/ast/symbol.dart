@@ -5,6 +5,9 @@ class Symbol {
   );
 
   final String ascii, latex;
+
+  @override
+  String toString() => latex;
 }
 
 const List<Symbol> greekSymbols = [

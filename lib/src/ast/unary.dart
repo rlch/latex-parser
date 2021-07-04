@@ -6,9 +6,12 @@ class Unary extends Symbol {
     String latex,
   ) : super(ascii, latex);
 
-  late dynamic symbol;
+  dynamic symbol;
 
   Unary get copy => Unary(ascii, latex);
+
+  @override
+  String toString() => '$latex{$symbol}';
 }
 
 final unarySymbols = [

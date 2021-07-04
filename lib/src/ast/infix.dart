@@ -6,12 +6,17 @@ class Infix implements Symbol {
     this.latex,
   );
 
-  late dynamic left, right;
+  dynamic left, right;
 
   Infix get copy => Infix(ascii, latex);
 
   @override
   final String ascii, latex;
+
+  @override
+  String toString() {
+    return '$left$latex$right';
+  }
 
   static Infix plus = Infix('+', '+').copy,
       minus = Infix('-', '-').copy,

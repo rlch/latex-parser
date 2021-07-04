@@ -18,7 +18,7 @@ class Binary implements Symbol {
     this.rb = Brackets.curly,
   });
 
-  late Symbol left, right;
+  Symbol? left, right;
   final Brackets lb, rb;
 
   Binary get copy => Binary(ascii, latex);
@@ -29,7 +29,10 @@ class Binary implements Symbol {
   final String latexCommand;
   @override
   String get latex =>
-      '$latexCommand${lb.left}${left.latex}${lb.right}${rb.left}${right.latex}${rb.right}';
+      '$latexCommand${lb.left}${left?.latex}${lb.right}${rb.left}${right?.latex}${rb.right}';
+
+  @override
+  String toString() => latex;
 }
 
 final binarySymbols = [
